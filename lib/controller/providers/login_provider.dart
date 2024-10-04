@@ -67,6 +67,7 @@ class LoginProvider with ChangeNotifier {
 
         if (user != null) {
           await SharedPrefsHelper.setLoggedIn(true);
+          await SharedPrefsHelper.setSocialLoggedIn(true);
           showCustomSnackBarHelper('Logged in successfully!', isError: false);
 
           Navigator.pushNamedAndRemoveUntil(
@@ -106,6 +107,8 @@ class LoginProvider with ChangeNotifier {
           await SharedPrefsHelper.setLoggedIn(true);
           if(_isChecked) {
             await SharedPrefsHelper.setUserInfo(emailOrMobile,password);
+          } else {
+            await SharedPrefsHelper.setUserInfo('','');
           }
 
           showCustomSnackBarHelper('Logged in successfully!', isError: false);

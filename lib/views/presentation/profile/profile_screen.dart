@@ -44,9 +44,10 @@ class ProfileScreen extends StatelessWidget {
           PopupMenuButton<int>(
             icon: ImageIcon(AssetImage(ConstAsset.menu), size: 26,color: Colors.black,),
             onSelected: (item) async {
-              // Provider.of<LoginProvider>(context).signOut();
-              await loginProvider.signOut();
-
+              if(SharedPrefsHelper.getSocialLoggedIn()) {
+                await loginProvider.signOut();
+                await SharedPrefsHelper.setSocialLoggedIn(false);
+              }
               SharedPrefsHelper.setLoggedIn(false);
               Navigator.pushNamedAndRemoveUntil(
                 context,

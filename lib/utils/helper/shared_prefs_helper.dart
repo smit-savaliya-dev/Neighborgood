@@ -22,6 +22,14 @@ class SharedPrefsHelper {
     return prefs.getStringList('user') ?? [];
   }
 
+  static Future<void> setSocialLoggedIn(bool value) async {
+    await prefs.setBool('isSocialLoggedIn', value);
+  }
+
+  static bool getSocialLoggedIn() {
+    return prefs.getBool('isSocialLoggedIn') ?? false;
+  }
+
   static Future<void> setLoggedIn(bool value) async {
     await prefs.setBool('isLoggedIn', value);
   }
