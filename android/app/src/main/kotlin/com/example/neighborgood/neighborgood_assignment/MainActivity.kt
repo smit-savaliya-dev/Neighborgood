@@ -1,4 +1,4 @@
-package com.example.neighborgood.neighborgood_assignment
+package com.example.neighborgood
 
 import io.flutter.embedding.android.FlutterActivity
 

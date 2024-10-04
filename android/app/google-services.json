@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "126681607343",
+    "firebase_url": "https://neighborgood-fbf00-default-rtdb.firebaseio.com",
+    "project_id": "neighborgood-fbf00",
+    "storage_bucket": "neighborgood-fbf00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126681607343:android:765df378969221675b785a",
+        "android_client_info": {
+          "package_name": "com.example.neighborgood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126681607343-ft13u01ogrk6o4945prrle8jmupu2vgv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.neighborgood",
+            "certificate_hash": "dd65cec96117c51c9530362e3f19f436cf1acd07"
+          }
+        },
+        {
+          "client_id": "126681607343-12sfdpvh9qbh8hoc39r5bsajmn68o5b8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTuYGxFwiwidBObU03OiyIPBB6_DfY9OQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126681607343-12sfdpvh9qbh8hoc39r5bsajmn68o5b8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
